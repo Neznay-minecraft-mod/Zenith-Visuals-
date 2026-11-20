@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ultraopt",
+  "version": "${version}",
+  "name": "Zenith Visuals",
+  "description": "Оптимизация (скрытие невидимого, отсечение частиц, пропуск тиков вдали) и визуал: динамический остров, панель, клавиши, меню настроек.",
+  "authors": ["Yulia"],
+  "license": "MIT",
+  "icon": "assets/ultraopt/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.ultraopt.UltraOptClient"]
+  },
+  "mixins": [
+    { "config": "ultraopt.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
